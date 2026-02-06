@@ -96,7 +96,7 @@ export const reducer = (state: AppState, action: Action): AppState => {
             const maxAffordable = calculateMaxAffordable(state.products, productId, product.price);
 
             //kullanıcın girdiği veya maksimum quantity
-            const finalQuantity = Math.min((quantity, maxAffordable));
+            const finalQuantity = Math.min(quantity, maxAffordable);
 
             //state güncelleme
             return {
