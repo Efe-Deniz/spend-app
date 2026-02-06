@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# 💰 Spend Bill Gates' Money
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun interactive web app where you can spend Bill Gates' fortune! Buy luxury items, supercars, yachts, and more while watching your balance decrease in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💵 Start with $100 billion
+- 🛒 Buy and sell various luxury items
+- 📊 Real-time balance tracking
+- 🧾 Receipt summary of purchases
+- 📱 Fully responsive design
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** with TypeScript
+- **Vite** for fast development
+- **Tailwind CSS** for styling
+- **useReducer** for state management
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Clone the repository
+git clone <your-repo-url>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Install dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Run development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎮 How to Play
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Browse through luxury items
+2. Click **Buy** to purchase (+1 quantity)
+3. Click **Sell** to return items (-1 quantity)
+4. Type a number in the input to buy multiple items at once
+5. Watch your balance and receipt update in real-time!
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📸 Screenshot
+
+![App Screenshot](./src/assets/ProjectView.png)
+
+## 🎓 Learning Project
+
+Built as a learning project to practice:
+
+- React hooks (useReducer, useState, useEffect)
+- TypeScript interfaces and type safety
+- Immutable state updates
+- Component composition
+- Tailwind CSS utility classes
+
+---
+
+Made with ❤️ and TypeScript
+
+```
+
+---
+
+
 ```
