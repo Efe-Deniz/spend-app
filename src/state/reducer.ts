@@ -1,0 +1,1 @@
+//state yönetimi useReducer fonksiyonu

@@ -1,0 +1,1 @@
+//tek bir ürün kartı
