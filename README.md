@@ -56,7 +56,7 @@ Built as a learning project to practice:
 
 Made with ❤️ and TypeScript
 
-```
+
 
 ---
 
